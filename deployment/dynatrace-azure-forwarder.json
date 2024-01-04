@@ -383,12 +383,12 @@
                 "enabled": true,
                 "hostNameSslStates": [
                     {
-                        "name": "[concat(variables('functionName'), '.azurewebsites.net')]",
+                        "name": "[concat(variables('functionName'), '.azurewebsites.us')]",
                         "sslState": "Disabled",
                         "hostType": "Standard"
                     },
                     {
-                        "name": "[concat(variables('functionName'), '.scm.azurewebsites.net')]",
+                        "name": "[concat(variables('functionName'), '.scm.azurewebsites.us')]",
                         "sslState": "Disabled",
                         "hostType": "Repository"
                     }
@@ -522,7 +522,7 @@
                 {
                     "type": "Microsoft.Web/sites/hostNameBindings",
                     "apiVersion": "2018-11-01",
-                    "name": "[concat(variables('functionName'), '/', variables('functionName'), '.azurewebsites.net')]",
+                    "name": "[concat(variables('functionName'), '/', variables('functionName'), '.azurewebsites.us')]",
                     "location": "[resourceGroup().location]",
                     "dependsOn": [
                         "[variables('functionAppId')]"
